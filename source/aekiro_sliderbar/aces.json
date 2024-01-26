@@ -1,0 +1,69 @@
+{
+	"": {
+		"conditions": [
+			{
+				"id": "issliding0",
+				"scriptName": "IsSliding",
+				"highlight": false
+			},
+			{
+				"id": "onchanged",
+				"scriptName": "OnChanged",
+				"highlight": false,
+				"isTrigger": "true"
+			}
+		],
+		"actions": [
+			{
+				"id": "setenabled0",
+				"scriptName": "setEnabled",
+				"highlight": false,
+				"params": [
+					{"id":"state2", "type":"combo", "items":["disabled","enabled"]}
+				]
+			},
+			{
+				"id": "setvalue1",
+				"scriptName": "setValue",
+				"highlight": false,
+				"params": [
+					{"id":"value0", "type":"number"}
+				]
+			},
+			{
+				"id": "setmaxvalue",
+				"scriptName": "setMaxValue",
+				"highlight": false,
+				"params": [
+					{"id":"value0", "type":"number"}
+				]
+			},
+			{
+				"id": "setminvalue",
+				"scriptName": "setMinValue",
+				"highlight": false,
+				"params": [
+					{"id":"value0", "type":"number"}
+				]
+			},
+			{
+				"id": "setstep",
+				"scriptName": "setStep",
+				"highlight": false,
+				"params": [
+					{"id":"value0", "type":"number"}
+				]
+			}
+
+		],
+		"expressions": [
+			{
+				"id": "value0",
+				"expressionName": "value",
+				"scriptName": "value",
+				"highlight": false,
+				"returnType": "number"
+			}
+		]
+	}
+}

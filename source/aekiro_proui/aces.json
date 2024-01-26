@@ -1,0 +1,56 @@
+{
+	"proui": {
+		"conditions": [
+			{
+				"id": "isdialogopened0",
+				"scriptName": "IsDialogOpened",
+				"highlight": false
+			},
+			{
+				"id": "onanybuttonclicked1",
+				"scriptName": "OnAnyButtonClicked",
+				"isTrigger": "true",
+				"highlight": false
+			}
+		],
+		"actions": [
+			{
+				"id": "init",
+				"scriptName": "Init",
+				"highlight": false
+			},
+			{
+				"id": "setinputignored0",
+				"scriptName": "SetInputIgnored",
+				"highlight": false,
+				"params": [
+					{"id":"input_state2", "type":"combo", "items":["no","yes"]}
+				]
+			},
+			{
+				"id": "clonegameobject",
+				"scriptName": "Clone",
+				"highlight": false,
+				"params": [
+					{"id":"json", "type":"string"},
+					{"id":"layer0", "type":"layer"},
+					{"id":"x", "type":"number"},
+					{"id":"y", "type":"number"},
+					{"id":"name", "type":"string"},
+					{"id":"parentName", "type":"string"}
+				]
+			},
+			{
+				"id": "setvolume",
+				"scriptName": "SetUIAudioVolume",
+				"highlight": false,
+				"params": [
+					{"id":"volume", "type":"number"}
+				]
+			}
+
+		],
+		"expressions": [
+		]
+	}
+}

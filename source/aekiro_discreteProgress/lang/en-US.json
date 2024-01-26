@@ -1,0 +1,39 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Discrete Progress.",
+	"text": {
+		"behaviors": {
+			"aekiro_discreteprogress": {
+				"name": "Discrete Progress",
+				"description": "Discrete Progress.",
+				"help-url": "https://later.com",
+				"properties": {
+					"value": {
+						"name": "Value",
+						"desc": "The value of the progress."
+						}
+				},
+				"aceCategories": {
+				},
+				"conditions": {
+				},
+				"actions": {
+					"setvalue0": {
+						"list-name": "Set",
+						"display-text": "Set {my} to [i]{0}[/i]",
+						"description": "Set the value of the discrete progress.",
+						"params": {
+							"value0": { "name":"value", "desc":"The value"}
+						}
+					}
+				},
+				"expressions": {
+					"value0": {
+						"description": "Get the value of the discrete progress.",
+						"translated-name": "value"
+						}
+				}
+			}
+		}
+	}
+}

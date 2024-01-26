@@ -1,0 +1,58 @@
+{
+	"": {
+		"conditions": [
+			{
+				"id": "ondialogopened0",
+				"scriptName": "onDialogOpened",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"id": "ondialogclosed1",
+				"scriptName": "onDialogClosed",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"id": "isopened2",
+				"scriptName": "isOpened",
+				"highlight": false
+			}
+		],
+		"actions": [
+			{
+				"id": "open0",
+				"scriptName": "Open",
+				"highlight": false,
+				"params": [
+					{"id":"target_x0", "type":"number"},
+					{"id":"target_y1", "type":"number"},
+					{"id":"center4", "type":"combo", "items":["no","yes"]}
+				]
+			},
+			{
+				"id": "close1",
+				"scriptName": "Close",
+				"highlight": false
+			},
+			{
+				"id": "setOpenSoundVolume",
+				"scriptName": "SetOpenSoundVolume",
+				"highlight": false,
+				"params": [
+					{"id":"volume", "type":"number"}
+				]
+			},
+			{
+				"id": "setCloseSoundVolume",
+				"scriptName": "SetCloseSoundVolume",
+				"highlight": false,
+				"params": [
+					{"id":"volume", "type":"number"}
+				]
+			}
+		],
+		"expressions": [
+		]
+	}
+}

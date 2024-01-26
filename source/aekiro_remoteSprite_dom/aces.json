@@ -1,0 +1,19 @@
+{
+  "load": {
+    "conditions": [],
+    "actions": [
+      {
+        "id": "loadfromurl",
+        "scriptName": "LoadFromURL",
+        "highlight": true,
+        "params": [
+          {
+            "id": "url",
+            "type": "string"
+          }
+        ]
+      }
+    ],
+    "expressions": []
+  }
+}

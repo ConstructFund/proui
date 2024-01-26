@@ -1,0 +1,69 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for GridView Data Bind.",
+	"text": {
+		"behaviors": {
+			"aekiro_gridviewbind": {
+				"name": "GridView Data Bind",
+				"description": "Map a GridView sub item to a key in an item of the data array.",
+				"help-url": "https://later.com",
+				"properties": {
+					"binding-key": {
+						"name": "Binding Key",
+						"desc": "The key in the array's item to which this UI is mapped."
+						}
+				},
+				"aceCategories": {
+				},
+				"conditions": {
+					"isindex0": {
+						"list-name": "Compare Index",
+						"display-text": "Index = {0}",
+						"description": "Compare the Index.",
+						"params": {
+							"index0": { "name":"Index", "desc":"Index"}
+						}
+						},
+					"isvalue1": {
+						"list-name": "Compare Value",
+						"display-text": "Value = {0}",
+						"description": "Compare the Value.",
+						"params": {
+							"value0": { "name":"Value", "desc":"Value"}
+						}
+						},
+					"onchanged": {
+						"list-name": "On Changed",
+						"display-text": "On {my} Changed",
+						"description": "Triggered when data has changed."
+						},
+					"onGridViewRender": {
+						"list-name": "On Grid View Render",
+						"display-text": "On {my} Grid View Render",
+						"description": "Triggered when the Grid View is built."
+					}
+
+				},
+				"actions": {
+				},
+				"expressions": {
+					"index0": {
+						"description": "Get the index of the corresponding array item.",
+						"translated-name": "index"
+					},
+					"key": {
+						"description": "Get the key of the corresponding item.",
+						"translated-name": "key"
+					},
+					"get": {
+						"description": "Get the value.",
+						"translated-name": "get",
+						"params": {
+							"key": { "name":"key", "desc":"key"}
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,37 @@
+{
+	"": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"id": "translateall0",
+				"scriptName": "TranslateAll",
+				"highlight": false,
+				"params": [
+					{"id":"language0", "type":"string"}
+				]
+			},
+			{
+				"id": "setdatabyjsonstring0",
+				"scriptName": "SetDataByJsonString",
+				"highlight": false,
+				"params": [
+					{"id":"data0", "type":"string"}
+				]
+			}
+		],
+		"expressions": [
+			{
+				"id": "get",
+				"expressionName": "get",
+				"scriptName": "get",
+				"highlight": false,
+				"returnType": "any",
+				"params": [
+					{"id":"key", "type":"string"},
+					{"id":"language0", "type":"string"}
+				]
+			}
+		]
+	}
+}

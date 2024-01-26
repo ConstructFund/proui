@@ -1,0 +1,27 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Translation.",
+	"text": {
+		"behaviors": {
+			"aekiro_translationb": {
+				"name": "Translation",
+				"description": "Translation",
+				"help-url": "https://later.com",
+				"properties": {
+					"key": {
+						"name": "key",
+						"desc": "key"
+						}
+				},
+				"aceCategories": {
+				},
+				"conditions": {
+				},
+				"actions": {
+				},
+				"expressions": {
+				}
+			}
+		}
+	}
+}

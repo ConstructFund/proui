@@ -1,0 +1,48 @@
+{
+	"": {
+		"conditions": [
+			{
+				"id": "isindex0",
+				"scriptName": "IsIndex",
+				"highlight": false,
+				"params": [
+					{"id":"index0", "type":"number"}
+				]
+			},
+			{
+				"id": "onGridViewRender",
+				"scriptName": "OnGridViewRender",
+				"isTrigger": "true",
+				"highlight": false
+			}
+		],
+		"actions": [
+		],
+		"expressions": [
+			{
+				"id": "index0",
+				"expressionName": "index",
+				"scriptName": "index",
+				"highlight": false,
+				"returnType": "number"
+			},
+			{
+				"id": "key",
+				"expressionName": "key",
+				"scriptName": "key",
+				"highlight": false,
+				"returnType": "string"
+			},
+			{
+				"id": "get",
+				"expressionName": "get",
+				"scriptName": "get",
+				"highlight": false,
+				"returnType": "any",
+				"params": [
+					{"id":"key", "type":"string"}
+				]
+			}
+		]
+	}
+}

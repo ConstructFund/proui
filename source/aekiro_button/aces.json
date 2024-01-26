@@ -1,0 +1,206 @@
+{
+	"": {
+		"conditions": [
+			{
+				"id": "onmouseenter0",
+				"scriptName": "OnMouseEnter",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"id": "onmouseleave1",
+				"scriptName": "OnMouseLeave",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"id": "onfocused",
+				"scriptName": "OnFocused",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"id": "onunfocused",
+				"scriptName": "OnUnFocused",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"id": "isfocused",
+				"scriptName": "IsFocused",
+				"highlight": false
+			},
+			{
+				"id": "isenabled2",
+				"scriptName": "IsEnabled",
+				"highlight": false
+			},
+			{
+				"id": "onclicked3",
+				"scriptName": "OnClicked",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"id": "isclickable",
+				"scriptName": "IsClickable",
+				"highlight": false
+			}
+		],
+		"actions": [
+			{
+				"id": "setenabled0",
+				"scriptName": "setEnabled",
+				"highlight": false,
+				"params": [
+					{"id":"state2", "type":"combo", "items":["disabled","enabled"]}
+				]
+			},
+			{
+				"id": "setignoreinput",
+				"scriptName": "SetIgnoreInput",
+				"highlight": false,
+				"params": [
+					{"id":"state", "type":"combo", "items":["no","yes","auto"]}
+				]
+			},
+			{
+				"id": "setClickSoundVolume",
+				"scriptName": "SetClickSoundVolume",
+				"highlight": false,
+				"params": [
+					{"id":"volume", "type":"number"}
+				]
+			},
+			{
+				"id": "setHoverSoundVolume",
+				"scriptName": "SetHoverSoundVolume",
+				"highlight": false,
+				"params": [
+					{"id":"volume", "type":"number"}
+				]
+			},
+			{
+				"id": "simulateclick",
+				"scriptName": "SimulateClick"
+			},
+			{
+				"id": "setFocused",
+				"scriptName": "SetFocused",
+				"highlight": false,
+				"params": [
+					{"id":"state", "type":"combo", "items":["no","yes"]}
+				]
+			},
+
+
+
+			{
+				"id": "setNormalFrame",
+				"scriptName": "setNormalFrame",
+				"highlight": false,
+				"params": [
+					{"id":"frame", "type":"string"}
+				]
+			},
+			{
+				"id": "setHoverFrame",
+				"scriptName": "setHoverFrame",
+				"highlight": false,
+				"params": [
+					{"id":"frame", "type":"string"}
+				]
+			},
+			{
+				"id": "setClickedFrame",
+				"scriptName": "setClickedFrame",
+				"highlight": false,
+				"params": [
+					{"id":"frame", "type":"string"}
+				]
+			},
+			{
+				"id": "setDisabledFrame",
+				"scriptName": "setDisabledFrame",
+				"highlight": false,
+				"params": [
+					{"id":"frame", "type":"string"}
+				]
+			},
+			{
+				"id": "setFocusFrame",
+				"scriptName": "setFocusFrame",
+				"highlight": false,
+				"params": [
+					{"id":"frame", "type":"string"}
+				]
+			},
+
+
+
+
+			{
+				"id": "setClickAnimation",
+				"scriptName": "setClickAnimation",
+				"highlight": false,
+				"params": [
+					{"id":"anim", "type":"combo", "items":["none","scale quadratic","scale elastic","down","up","left","right"]}
+				]
+			},
+			{
+				"id": "setHoverAnimation",
+				"scriptName": "setHoverAnimation",
+				"highlight": false,
+				"params": [
+					{"id":"anim", "type":"combo", "items":["none","scale quadratic","scale elastic","down","up","left","right"]}
+				]
+			},
+			{
+				"id": "setFocusAnimation",
+				"scriptName": "setFocusAnimation",
+				"highlight": false,
+				"params": [
+					{"id":"anim", "type":"combo", "items":["none","scale quadratic","scale elastic","down","up","left","right"]}
+				]
+			},
+
+			
+			{
+				"id": "setNormalColor",
+				"scriptName": "setNormalColor",
+				"highlight": false,
+				"params": [
+					{"id":"color", "type":"string"}
+				]
+			},
+			{
+				"id": "setHoverColor",
+				"scriptName": "setHoverColor",
+				"highlight": false,
+				"params": [
+					{"id":"color", "type":"string"}
+				]
+			},
+			{
+				"id": "setClickedColor",
+				"scriptName": "setClickedColor",
+				"highlight": false,
+				"params": [
+					{"id":"color", "type":"string"}
+				]
+			},
+			{
+				"id": "setFocusColor",
+				"scriptName": "setFocusColor",
+				"highlight": false,
+				"params": [
+					{"id":"color", "type":"string"}
+				]
+			}
+
+
+		],
+		"expressions": [
+		]
+	}
+}

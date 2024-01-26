@@ -1,0 +1,271 @@
+{
+	"": {
+		"conditions": [
+			{
+				"id": "isname0",
+				"scriptName": "IsName",
+				"params": [
+					{"id":"name0", "type":"string"}
+				]
+			},
+			{
+				"id": "isparent1",
+				"scriptName": "IsParentName",
+				"params": [
+					{"id":"parent_name0", "type":"string"}
+				]
+			}
+		],
+		"actions": [
+			{
+				"id": "clone0",
+				"scriptName": "Clone",
+				"params": [
+					{"id":"layer0", "type":"layer"},
+					{"id":"x", "type":"number"},
+					{"id":"y", "type":"number"},
+					{"id":"name", "type":"string"},
+					{"id":"parentName", "type":"string"}
+				]
+			},
+			{
+				"id": "set-width",
+				"scriptName": "SetWidth",
+				"params": [{"id": "width","type": "number"}]
+			},
+			{
+				"id": "set-height",
+				"scriptName": "SetHeight",
+				"params": [{"id": "height","type": "number"}]
+			},
+			{
+				"id": "set-name",
+				"scriptName": "SetName",
+				"params": [{"id": "name","type": "string"}]
+			}
+		],
+		"expressions": [
+			{
+				"id": "name0",
+				"expressionName": "name",
+				"scriptName": "name",
+				"returnType": "string"
+			},
+			{
+				"id": "parent1",
+				"expressionName": "parent",
+				"scriptName": "parent",
+				"returnType": "string"
+			},
+			{
+				"id": "asjson",
+				"expressionName": "asjson",
+				"scriptName": "asjson",
+				"returnType": "string"
+			},
+			{
+				"id": "globalX",
+				"expressionName": "globalX",
+				"scriptName": "globalX",
+				"returnType": "number",
+				"isDeprecated":true
+			},
+			{
+				"id": "globalY",
+				"expressionName": "globalY",
+				"scriptName": "globalY",
+				"returnType": "number",
+				"isDeprecated":true
+			},
+			{
+				"id": "globalAngle",
+				"expressionName": "globalAngle",
+				"scriptName": "globalAngle",
+				"returnType": "number",
+				"isDeprecated":true
+			}
+		]
+	},
+
+	"locals": {
+		"conditions": [	],
+		"actions": [
+			{
+				"id": "setLocalX",
+				"scriptName": "SetLocalX",
+				"params": [{"id": "x","type": "number"}]
+			},
+			{
+				"id": "setLocalY",
+				"scriptName": "SetLocalY",
+				"params": [{"id": "y","type": "number"}]
+			},
+			{
+				"id": "setLocalAngle",
+				"scriptName": "SetLocalAngle",
+				"params": [{"id": "angle","type": "number"}]
+			}
+		],
+		"expressions": [
+			{
+				"id": "localX",
+				"expressionName": "localX",
+				"scriptName": "localX",
+				"returnType": "number"
+			},
+			{
+				"id": "localY",
+				"expressionName": "localY",
+				"scriptName": "localY",
+				"returnType": "number"
+			},
+			{
+				"id": "localAngle",
+				"expressionName": "localAngle",
+				"scriptName": "localAngle",
+				"returnType": "number"
+			}
+		]
+	},
+	"add": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"id": "addchildrenfromlayer2",
+				"scriptName": "AddChildrenFromLayer",
+				"highlight": false,
+				"params": [
+					{"id":"layer0", "type":"layer"}
+				]
+			},
+			{
+				"id": "addchildrenfromtype3",
+				"scriptName": "AddChildrenFromType",
+				"highlight": false,
+				"params": [
+					{"id":"type0", "type":"object"}
+				]
+			},
+			{
+				"id": "addchildbyname10",
+				"scriptName": "AddChildByName",
+				"highlight": false,
+				"params": [
+					{"id":"name0", "type":"string"}
+				]
+			}
+		],
+		"expressions": [
+		]
+	},
+	"remove": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"id": "removechildbyname5",
+				"scriptName": "RemoveChildByName",
+				"highlight": false,
+				"params": [
+					{"id":"name0", "type":"string"}
+				]
+			},
+			{
+				"id": "removechildbytype6",
+				"scriptName": "RemoveChildByType",
+				"highlight": false,
+				"params": [
+					{"id":"type0", "type":"object"}
+				]
+			},
+			{
+				"id": "removefromparent7",
+				"scriptName": "RemoveFromParent",
+				"highlight": false
+			},
+			{
+				"id": "removeAllchildren",
+				"scriptName": "RemoveAllchildren"
+			}
+		],
+		"expressions": [
+		]
+	},
+	"hierarchy": {
+		"conditions": [],
+		"expressions": [],
+		"actions": [
+
+				{
+					"id": "set-visible",
+					"scriptName": "SetVisible",
+					"params": [{"id": "visibility","type": "combo", "items":["invisible", "visible","toggle"]}]
+				},
+				{
+					"id": "set-opacity",
+					"scriptName": "SetOpacity",
+					"params": [{"id": "opacity","type": "number"}]
+				},
+				{
+					"id": "set-default-color",
+					"scriptName": "SetColor",
+					"params": [{"id": "color","type": "number"}]
+				},
+				{
+					"id": "set-blend-mode",
+					"scriptName": "SetEffect",
+					"hideInSimplifiedMode": true,
+					"params": [{
+							"id": "blend-mode",
+							"type": "combo",
+							"items": ["normal", "additive", "xor", "copy", "destination-over", "source-in", "destination-in", "source-out", "destination-out", "source-atop", "destination-atop"]
+						}
+					]
+				},
+				{
+					"id": "set-mirrored",
+					"scriptName": "SetMirrored",
+					"params": [{
+							"id": "state",
+							"type": "combo",
+							"items": ["mirrored", "not-mirrored"]
+						}
+					]
+				},
+				{
+					"id": "set-flipped",
+					"scriptName": "SetFlipped",
+					"params": [{
+							"id": "state",
+							"type": "combo",
+							"items": ["flipped", "not-flipped"]
+						}
+					]
+				},
+				{
+					"id": "set-z-elevation",
+					"scriptName": "SetZElevation",
+					"params": [{"id": "z","type": "number"}]
+				},
+				{
+					"id": "move-to-layer",
+					"scriptName": "MoveToLayer",
+					"params": [{"id": "layer","type": "layer"}]
+				},
+				{
+					"id": "move-to-top",
+					"scriptName": "MoveToTop"
+				},
+				{
+					"id": "move-to-bottom",
+					"scriptName": "MoveToBottom"
+				},
+				{
+					"id": "destroy",
+					"scriptName": "Destroy"
+				}
+
+		]
+	}
+}

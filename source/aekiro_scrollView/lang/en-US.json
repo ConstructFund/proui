@@ -1,0 +1,126 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Scroll View.",
+	"text": {
+		"behaviors": {
+			"aekiro_scrollview": {
+				"name": "Scroll View",
+				"description": "Scroll View",
+				"help-url": "https://www.construct.net",
+				"properties": {
+					"is-enabled": {
+						"name": "Is Enabled",
+						"desc": "Enable or disable.",
+						"items": {
+							"disabled":"Disabled",
+							"enabled":"Enabled"
+							}
+						},
+					"direction": {
+						"name": "Direction",
+						"desc": "Scrolling direction.",
+						"items": {
+							"vertical":"Vertical",
+							"horizontal":"Horizontal",
+							"both":"Both"
+							}
+						},
+					"swipe-scroll": {
+						"name": "Swipe Scroll",
+						"desc": "Swipe scrolling.",
+						"items": {
+							"disabled":"Disabled",
+							"enabled":"Enabled"
+							}
+						},
+					"mousewheel-scroll": {
+						"name": "MouseWheel Scroll",
+						"desc": "MouseWheel scrolling.",
+						"items": {
+							"disabled":"Disabled",
+							"enabled":"Enabled"
+							}
+						},
+					"inertia": {
+						"name": "Inertia",
+						"desc": "Inertia.",
+						"items": {
+							"disabled":"Disabled",
+							"enabled":"Enabled"
+							}
+						},
+					"movement-type": {
+						"name": "Movement type",
+						"desc": "Movement type.",
+						"items": {
+							"clamped":"Clamped",
+							"elastic":"Elastic"
+							}
+						},
+					"content-name": {
+						"name": "Content Name",
+						"desc": "Name of the content"
+						},
+					"vertical-slider-name": {
+						"name": "Vertical Slider Name",
+						"desc": "Name of the vertical slider"
+						},
+					"vertical-scrollbar-name": {
+						"name": "Vertical ScrollBar Name",
+						"desc": "Name of the vertical scroll bar"
+						},
+					"horizontal-slider-name": {
+						"name": "Horizontal Slider Name",
+						"desc": "Name of the horizontal slider"
+						},
+					"horizontal-scrollbar-name": {
+						"name": "Horizontal ScrollBar Name",
+						"desc": "Name of the vertical scroll bar"
+						},
+					"mouseWheelScrollSpeed": {
+							"name": "Mouse Wheel Scroll Speed",
+							"desc": "Control mouse wheel speed"
+					}
+				},
+				"aceCategories": {
+				},
+				"conditions": {
+				},
+				"actions": {
+					"scrollto0": {
+						"list-name": "Scroll to",
+						"display-text": "Scroll {my} to ({0},{1}) with target type = {2} and smooth factor = {3}",
+						"description": "Scroll the content to the target (x,y).",
+						"params": {
+							"x0": { "name":"x", "desc":"X position to scroll to. (must be global)"},
+							"y1": { "name":"y", "desc":"Y position to scroll to. (must be global)"},
+							"target_type4": { "name":"Target type", "desc":"Absolute: x/y are the position of the target. Percentage: x/y are percentage of the width/height of the content.", "items":{"absolute":"Absolute","percentage":"Percentage"}},
+							"smooth_scroll_factor5": { "name":"Smooth scroll factor", "desc":"Between 1(instant scroll) and 0."}
+						}
+					},
+					"scrollby": {
+						"list-name": "Scroll by",
+						"display-text": "Scroll {my} by ({0},{1}) with target type = {2} and smooth factor = {3}",
+						"description": "Scroll the content by this amount (x,y).",
+						"params": {
+							"x0": { "name":"x", "desc":"X amount to scroll by."},
+							"y1": { "name":"y", "desc":"Y amount to scroll by."},
+							"target_type4": { "name":"Target type", "desc":"Absolute: x/y are absolute distances. Percentage: x/y are percentage of the width/height of the content.", "items":{"absolute":"Absolute","percentage":"Percentage"}},
+							"smooth_scroll_factor5": { "name":"Smooth scroll factor", "desc":"Between 1(instant scroll) and 0."}
+						}
+					},
+					"setenabled1": {
+						"list-name": "Set enabled",
+						"display-text": "Set {my} to [i]{0}[/i]",
+						"description": "Enable/Disable the scroll view.",
+						"params": {
+							"state2": { "name":"State", "desc":"state", "items":{"disabled":"Disabled","enabled":"Enabled"}}
+						}
+					}
+				},
+				"expressions": {
+				}
+			}
+		}
+	}
+}

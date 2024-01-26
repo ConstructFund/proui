@@ -1,0 +1,361 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Game Object.",
+	"text": {
+		"behaviors": {
+			"aekiro_gameobject": {
+				"name": "Game Object",
+				"description": "later.",
+				"help-url": "https://later.com",
+				"properties": {
+					"name": {
+						"name": "Name",
+						"desc": "A unique string that identify the object."
+						},
+					"parent-name": {
+						"name": "Parent Name",
+						"desc": "The parent's name."
+						},
+					"parent-layer": {
+						"name": "Parent Layer",
+						"desc": "Add all objects on same layer as children."
+						}
+				},
+				"aceCategories": {
+					"add": "Add",
+					"remove": "Remove",
+					"hierarchy":"Hierarchy",
+					"locals":"Local Position & Angle"
+				},
+				"conditions": {
+					"isname0": {
+						"list-name": "Compare Name",
+						"display-text": "Name = {0}",
+						"description": "Compare the name.",
+						"params": {
+							"name0": { "name":"Name", "desc":"Name"}
+						}
+					},
+					"isparent1": {
+						"list-name": "Compare Parent Name",
+						"display-text": "Parent = {0}",
+						"description": "Compare parent name.",
+						"params": {
+							"parent_name0": { "name":"Parent Name", "desc":"Parent Name"}
+						}
+					}
+				},
+				"actions": {
+					"setLocalX": {
+						"list-name": "Set Local X",
+						"display-text": "{my} Set Local X to [i]{0}[/i]",
+						"description": "Set the object's local X.",
+						"params": {
+							"x": {
+								"name": "X",
+								"desc": "X"
+							}
+						}
+					},
+					"setLocalY": {
+						"list-name": "Set Local Y",
+						"display-text": "{my} Set Local Y to [i]{0}[/i]",
+						"description": "Set the object's local Y.",
+						"params": {
+							"y": {
+								"name": "Y",
+								"desc": "Y"
+							}
+						}
+					},
+					"setLocalAngle": {
+						"list-name": "Set Local Angle",
+						"display-text": "{my} Set Local Angle to [i]{0}[/i]",
+						"description": "Set the object's local Angle.",
+						"params": {
+							"angle": {
+								"name": "Angle",
+								"desc": "Angle"
+							}
+						}
+					},
+					"clone0": {
+						"list-name": "Clone",
+						"display-text": "{my} Clone on layer [b]{0}[/b] at (x = [b]{1}[/b] , y = [b]{2}[/b]) with name = {3} and parent name = {4}",
+						"description": "Clone.",
+						"params": {
+							"layer0": { "name":"Layer", "desc":"The layer name or number to create the instance on."},
+							"x": { "name":"X", "desc":"X in global coordinates"},
+							"y": { "name":"Y", "desc":"Y in global coordinates"},
+							"name": { "name":"Name", "desc":"If left empty a name will be given automatically."},
+							"parentName": { "name":"Parent Name", "desc":"Leave empty if no parent."}
+						}
+					},
+					"destroy": {
+						"list-name": "Destroy",
+						"display-text": "{my} Destroy the hierarchy.",
+						"description": "Destroy the entire hierarchy."
+					},
+					"addchildrenfromlayer2": {
+						"list-name": "Add Children From Layer",
+						"display-text": "{my} Add children from layer [b]{0}[/b]",
+						"description": "AddChildrenFromLayer.",
+						"params": {
+							"layer0": { "name":"Layer", "desc":"The layer name."}
+						}
+					},
+					"addchildrenfromtype3": {
+						"list-name": "Add Children of type",
+						"display-text": "{my} Add children of type [b]{0}[/b]",
+						"description": "AddChildrenFromType.",
+						"params": {
+							"type0": { "name":"Type", "desc":"Choose the object type to add."}
+						}
+					},
+					"addchildbyname10": {
+						"list-name": "Add Child By Name",
+						"display-text": "{my} Add child of name [b]{0}[/b]",
+						"description": "AddChildByName",
+						"params": {
+							"name0": { "name":"Name", "desc":"Name"}
+						}
+					},
+					"removechildbyname5": {
+						"list-name": "Remove Child By Name",
+						"display-text": "{my} Remove child of name [b]{0}[/b]",
+						"description": "RemoveChildByName",
+						"params": {
+							"name0": { "name":"Name", "desc":"Name"}
+						}
+					},
+					"removechildbytype6": {
+						"list-name": "Remove Child By Type",
+						"display-text": "Remove children of type [b]{0}[/b]",
+						"description": "RemoveChildByType.",
+						"params": {
+							"type0": { "name":"Type", "desc":"Choose the object type to remove."}
+						}
+					},
+					"removefromparent7": {
+						"list-name": "Remove From Parent",
+						"display-text": "Remove from parent",
+						"description": "RemoveFromParent."
+					},
+					"removeAllchildren": {
+						"list-name": "Remove All Children",
+						"display-text": "Remove All Children",
+						"description": "Remove All Children."
+					},
+					"set-width": {
+						"list-name": "Set width",
+						"display-text": "{my} Set width to [i]{0}[/i]",
+						"description": "Set the object's width.",
+						"params": {
+							"width": {
+								"name": "Width",
+								"desc": "New object width, in pixels."
+							}
+						}
+					},
+					"set-height": {
+						"list-name": "Set height",
+						"display-text": "{my} Set height to [i]{0}[/i]",
+						"description": "Set the object's height.",
+						"params": {
+							"height": {
+								"name": "Height",
+								"desc": "New object height, in pixels."
+							}
+						}
+					},
+					"set-name": {
+						"list-name": "Set Name",
+						"display-text": "{my} Set name to [i]{0}[/i]",
+						"description": "Set the object's name.",
+						"params": {
+							"name": {
+								"name": "Name",
+								"desc": "New object name."
+							}
+						}
+					},
+					"set-scale": {
+						"list-name": "Set scale",
+						"display-text": "{my} Set scale to [i]{0}[/i]",
+						"description": "Set the width and height as a multiple of its original size.",
+						"params": {
+							"scale": {
+								"name": "Scale",
+								"desc": "The object width and height to set, based on a multiple of its original dimensions, e.g. 1 = original size, 2 = double size, 0.5 = half size etc."
+							}
+						}
+					},
+					"set-visible": {
+						"list-name": "Set visible",
+						"display-text": "{my} Set visibility [b]{0}[/b]",
+						"description": "Set whether the object is hidden or shown.",
+						"params": {
+							"visibility": {
+								"name": "Visibility",
+								"desc": "Choose whether the object is hidden, shown, or toggled.",
+								"items": {
+									"invisible": "Invisible",
+									"visible": "Visible",
+									"toggle": "Toggle"
+								}
+							}
+						}
+					},
+					"set-opacity": {
+						"list-name": "Set opacity",
+						"display-text": "{my} Set opacity to [i]{0}[/i]",
+						"description": "Set how transparent the object appears.",
+						"params": {
+							"opacity": {
+								"name": "Opacity",
+								"desc": "Choose the object opacity, from 0 (transparent) to 100 (opaque)."
+							}
+						}
+					},
+					"set-default-color": {
+						"list-name": "Set color",
+						"display-text": "{my} Set color to [i]{0}[/i]",
+						"description": "Set the color to apply to the object.",
+						"params": {
+							"color": {
+								"name": "Color",
+								"desc": "Choose the color to apply using an expression like rgbEx(100, 0, 0) for red."
+							}
+						}
+					},
+					"set-blend-mode": {
+						"list-name": "Set blend mode",
+						"display-text": "{my} Set blend mode to [i]{0}[/i]",
+						"description": "Set the background blend mode for this object.",
+						"params": {
+							"blend-mode": {
+								"name": "Blend mode",
+								"desc": "Choose the new blend mode for this object.",
+								"items": {
+									"normal": "Normal",
+									"additive": "Additive",
+									"xor": "XOR",
+									"copy": "Copy",
+									"destination-over": "Destination over",
+									"source-in": "Source in",
+									"destination-in": "Destination in",
+									"source-out": "Source out",
+									"destination-out": "Destination out",
+									"source-atop": "Source atop",
+									"destination-atop": "Destination atop"
+								}
+							}
+						}
+					},
+					"set-mirrored": {
+						"list-name": "Set mirrored",
+						"display-text": "{my} Set [b]{0}[/b]",
+						"description": "Set the object horizontally mirrored or back to normal.",
+						"params": {
+							"state": {
+								"name": "State",
+								"desc": "Choose whether to horizontally mirror the object or set it back to normal.",
+								"items": {
+									"mirrored": "Mirrored",
+									"not-mirrored": "Not mirrored"
+								}
+							}
+						}
+					},
+					"set-flipped": {
+						"list-name": "Set flipped",
+						"display-text": "{my} Set [b]{0}[/b]",
+						"description": "Set the object vertically flipped or back to normal.",
+						"params": {
+							"state": {
+								"name": "State",
+								"desc": "Choose whether to vertically flip the object or set it back to normal.",
+								"items": {
+									"flipped": "Flipped",
+									"not-flipped": "Not flipped"
+								}
+							}
+						}
+					},
+
+					"set-z-elevation": {
+						"list-name": "Set Z elevation",
+						"display-text": "{my} Set Z elevation to [i]{0}[/i]",
+						"description": "Set the object's Z elevation.",
+						"params": {
+							"z": {
+								"name": "Z elevation",
+								"desc": "New Z elevation. The camera starts at Z 100 looking down to Z 0."
+							}
+						}
+					},
+					"move-to-layer": {
+						"list-name": "Move to layer",
+						"display-text": "{my} Move to layer [b]{0}[/b]",
+						"description": "Change the object's layer.",
+						"params": {
+							"layer": {
+								"name": "Layer",
+								"desc": "Layer name or number to move this object to.  The object will be placed at the top of this layer."
+							}
+						}
+					},
+                    "move-to-top": {
+                        "list-name": "Move to top",
+                        "display-text": "Move to top of layer",
+                        "description": "Place the object at the top of its layer."
+                    },
+                    "move-to-bottom": {
+                        "list-name": "Move to bottom",
+                        "display-text": "Move to bottom of layer",
+                        "description": "Place the object at the bottom of its layer."
+                    }
+				},
+				"expressions": {
+					"name0": {
+						"description": "Get the name.",
+						"translated-name": "name"
+					},
+					"parent1": {
+						"description": "Get the parent name.",
+						"translated-name": "parent"
+					},
+					"asjson": {
+						"description": "Get the JSON template.",
+						"translated-name": "AsJSON"
+					},
+					"globalX": {
+						"description": "Get X coordinate in global space.",
+						"translated-name": "globalX"
+					},
+					"globalY": {
+						"description": "Get Y coordinate in global space.",
+						"translated-name": "globalY"
+					},
+					"globalAngle": {
+						"description": "Get Angle coordinate in global space.",
+						"translated-name": "globalAngle"
+					},
+
+					"localX": {
+						"description": "Get X coordinate in parent space.",
+						"translated-name": "localX"
+					},
+					"localY": {
+						"description": "Get Y coordinate in parent space.",
+						"translated-name": "localY"
+					},
+					"localAngle": {
+						"description": "Get Angle coordinate in parent space.",
+						"translated-name": "localAngle"
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,32 @@
+{
+  "is-c3-addon": true,
+  "type": "plugin",
+  "name": "Remote Sprite",
+  "id": "aekiro_remoteSprite",
+  "version": "1.1",
+  "author": "Akeiro",
+  "website": "https://www.construct.net",
+  "documentation": "https://www.construct.net",
+  "description": "Add addon descirption here",
+  "editor-scripts": [
+    "plugin.js",
+    "type.js",
+    "instance.js"
+  ],
+  "file-list": [
+    "c3runtime/plugin.js",
+    "c3runtime/type.js",
+    "c3runtime/instance.js",
+    "c3runtime/domSide.js",
+    "c3runtime/conditions.js",
+    "c3runtime/actions.js",
+    "c3runtime/expressions.js",
+    "lang/en-US.json",
+    "aces.json",
+    "addon.json",
+    "icon.svg",
+    "instance.js",
+    "plugin.js",
+    "type.js"
+  ]
+}

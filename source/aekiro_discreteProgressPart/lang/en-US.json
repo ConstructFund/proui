@@ -1,0 +1,39 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Discrete Progress Part.",
+	"text": {
+		"behaviors": {
+			"aekiro_discreteprogresspart": {
+				"name": "Discrete Progress Part",
+				"description": "Part of a discrete progress.",
+				"help-url": "https://later.com",
+				"properties": {
+					"index": {
+						"name": "index",
+						"desc": "The index of the part."
+						},
+					"0-frame": {
+						"name": "0-Frame",
+						"desc": "Frame which corresponds to 0."
+						},
+					"0.5-frame": {
+						"name": "0.5-Frame",
+						"desc": "Frame which corresponds to 0.5."
+						},
+					"1-frame": {
+						"name": "1-Frame",
+						"desc": "Frame which corresponds to 1."
+						}
+				},
+				"aceCategories": {
+				},
+				"conditions": {
+				},
+				"actions": {
+				},
+				"expressions": {
+				}
+			}
+		}
+	}
+}

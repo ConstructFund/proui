@@ -1,0 +1,362 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Button.",
+	"text": {
+		"behaviors": {
+			"aekiro_button": {
+				"name": "Button",
+				"description": "Makes a sprite/9-patch/tiled background object behave like a button.",
+				"help-url": "https://later.com",
+				"properties": {
+					"isenabled": {
+						"name": "isEnabled",
+						"desc": "Enable/Disable the button.",
+						"items": {
+							"false":"False",
+							"true":"True"
+							}
+						},
+					"normal-frame": {
+						"name": "Normal Frame",
+						"desc": "Frame and/or animation when in normal state. eg: animationName/frameNumber"
+						},
+					"hover-frame": {
+						"name": "Hover Frame",
+						"desc": "Frame and/or animation when hovered by the cursor. eg: animationName/frameNumber"
+						},
+					"clicked-frame": {
+						"name": "Clicked Frame",
+						"desc": "Frame and/or animation when clicked. eg: animationName/frameNumber"
+					},
+					"disabled-frame": {
+						"name": "Disabled Frame",
+						"desc": "Frame and/or animation when disabled. eg: animationName/frameNumber"
+					},
+					"focus-frame": {
+						"name": "Focus Frame",
+						"desc": "Frame and/or animation when focused. eg: animationName/frameNumber"
+					},
+					"normal-color": {
+						"name": "Normal color",
+						"desc": "Color when in normal state. eg: 255, 30, 100"
+					},
+					"hover-color": {
+						"name": "Hover color",
+						"desc": "Color when hovered by the cursor. eg: 255, 30, 100"
+					},
+					"clicked-color": {
+						"name": "Clicked color",
+						"desc": "Color when clicked. eg: 255, 30, 100"
+					},
+					"disabled-color": {
+						"name": "Disabled Color",
+						"desc": "Color when disabled. eg: 255, 30, 100"
+					},
+					"focus-color": {
+						"name": "Focused Color",
+						"desc": "Color when focused. eg: 255, 30, 100"
+					},
+					"click-sound": {
+						"name": "Click Sound",
+						"desc": "Sound to play when clicked. eg: soundName/volume"
+					},
+					"focus-sound": {
+						"name": "Focus Sound",
+						"desc": "Sound to play when focused. eg: soundName/volume"
+					},
+					"click-animation": {
+						"name": "Click Animation",
+						"desc": "Animation to play when clicked.",
+						"items": {
+							"none":"None",
+							"scale quadratic":"Scale Quadratic",
+							"scale elastic":"Scale Elastic",
+							"down":"Down",
+							"up":"Up",
+							"left":"Left",
+							"right":"Right"
+							}
+						},
+						"focus-animation": {
+							"name": "Focus Animation",
+							"desc": "Animation to play when focused.",
+							"items": {
+								"none":"None",
+								"scale quadratic":"Scale Quadratic",
+								"scale elastic":"Scale Elastic",
+								"down":"Down",
+								"up":"Up",
+								"left":"Left",
+								"right":"Right"
+								}
+							},
+					"hover-sound": {
+						"name": "Hover Sound",
+						"desc": "Sound to be play on mouse enter. eg: soundName/volume"
+						},
+					"hover-animation": {
+						"name": "Hover Animation",
+						"desc": "Animation to play on mouse enter.",
+						"items": {
+							"none":"None",
+							"scale quadratic":"Scale Quadratic",
+							"scale elastic":"Scale Elastic",
+							"down":"Down",
+							"up":"Up",
+							"left":"Left",
+							"right":"Right"
+							}
+						},
+						
+					"click-animation-factor": {
+						"name": "Click Animation Factor",
+						"desc": "Factor to control animation"
+					},
+					"hover-animation-factor": {
+						"name": "Hover Animation Factor",
+						"desc": "Factor to control animation"
+					},
+					"focus-animation-factor": {
+						"name": "Focus Animation Factor",
+						"desc": "Factor to control animation"
+					},
+
+					"ignore-input": {
+						"name": "Ignore Input",
+						"desc": "Ignore Input",
+						"items": {
+							"no":"No",
+							"yes":"Yes",
+							"auto":"Auto"
+							}
+						}
+				},
+				"aceCategories": {
+				},
+				"conditions": {
+					"onmouseenter0": {
+						"list-name": "On Mouse Enter",
+						"display-text": "On Mouse Enter",
+						"description": "Triggered when the mouse cursor enters the button."
+						},
+					"onfocused": {
+						"list-name": "On Focus",
+						"display-text": "On Focus",
+						"description": "Triggered when the button is focused."
+						},
+					"onunfocused": {
+						"list-name": "On UnFocus",
+						"display-text": "On UnFocus",
+						"description": "Triggered when the button is unfocused."
+						},
+					"isfocused": {
+						"list-name": "Is Focused",
+						"display-text": "{my} Is Focused",
+						"description": "True if the button is currently focused."
+					},
+					"onmouseleave1": {
+						"list-name": "On Mouse Leave",
+						"display-text": "On Mouse Leave",
+						"description": "Triggered when the mouse cursor leaves the button."
+						},
+					"isenabled2": {
+						"list-name": "Is Enabled",
+						"display-text": "{my} is enabled",
+						"description": "True if the button is currently enabled."
+						},
+					"onclicked3": {
+						"list-name": "On Clicked",
+						"display-text": "On clicked",
+						"description": "Triggered when the button is clicked."
+						},
+					"isclickable": {
+						"list-name": "Is Clickable",
+						"display-text": "Is Clickable",
+						"description": "True if the button is clickable."
+					}
+				},
+				"actions": {
+					"setenabled0": {
+						"list-name": "Set Enabled",
+						"display-text": "Set {my} to [i]{0}[/i]",
+						"description": "Enable/Disable the button.",
+						"params": {
+							"state2": { "name":"State", "desc":"The state of the button.", "items":{"disabled":"Disabled","enabled":"Enabled"}}
+						}
+					},
+					"simulateclick": {
+						"list-name": "Simulate Click",
+						"display-text": "{my} Simulate Click",
+						"description": "Simulate Click."
+					},
+					"setFocused": {
+						"list-name": "Set Focused",
+						"display-text": "{my} Set Focused To [i]{0}[/i]",
+						"description": "Set Focused.",
+						"params": {
+							"state": { "name":"State", "desc":"The focus state of the button.", "items":{"no":"Unfocused","yes":"Focused"}}
+						}
+					},
+					"setClickSoundVolume": {
+						"list-name": "Set Click Sound Volume",
+						"display-text": "{my} Set Click Sound Volume to [i]{0}[/i]",
+						"description": "Set Click Sound Volume.",
+						"params": {
+							"volume": { "name":"Volume", "desc":"Volume"}
+						}
+					},
+					"setHoverSoundVolume": {
+						"list-name": "Set Hover Sound Volume",
+						"display-text": "{my} Set Hover Sound Volume to [i]{0}[/i]",
+						"description": "Set Hover Sound Volume.",
+						"params": {
+							"volume": { "name":"Volume", "desc":"Volume"}
+						}
+					},
+					"setignoreinput": {
+						"list-name": "Set Ignore Input",
+						"display-text": "Set {my} Ignore Input to [i]{0}[/i]",
+						"description": "Set the Ignore Input property of the button.",
+						"params": {
+							"state": { "name":"State", "desc":"The state of the Ignore Input.", "items":{"no":"No","yes":"Yes","auto":"Auto"}}
+						}
+					},
+
+
+					"setNormalFrame": {
+						"list-name": "Set Normal Frame",
+						"display-text": "{my} Set Normal Frame to [i]{0}[/i]",
+						"description": "Set Normal Frame.",
+						"params": {
+							"frame": { "name":"Frame", "desc":"Frame"}
+						}
+					},
+					"setHoverFrame": {
+						"list-name": "Set Hover Frame",
+						"display-text": "{my} Set Hover Frame to [i]{0}[/i]",
+						"description": "Set Hover Frame.",
+						"params": {
+							"frame": { "name":"Frame", "desc":"Frame"}
+						}
+					},
+					"setClickedFrame": {
+						"list-name": "Set Clicked Frame",
+						"display-text": "{my} Set Clicked Frame to [i]{0}[/i]",
+						"description": "Set Clicked Frame .",
+						"params": {
+							"frame": { "name":"Frame", "desc":"Frame"}
+						}
+					},
+					"setDisabledFrame": {
+						"list-name": "Set Disabled Frame",
+						"display-text": "{my} Set Disabled Frame to [i]{0}[/i]",
+						"description": "Set Disabled Frame.",
+						"params": {
+							"frame": { "name":"Frame", "desc":"Frame"}
+						}
+					},
+					"setFocusFrame": {
+						"list-name": "Set Focus Frame",
+						"display-text": "{my} Set Focus Frame to [i]{0}[/i]",
+						"description": "Set Focus Frame.",
+						"params": {
+							"frame": { "name":"Frame", "desc":"Frame"}
+						}
+					},
+
+
+					"setClickAnimation": {
+						"list-name": "Set Click Animation",
+						"display-text": "{my} Set Click Animation To [i]{0}[/i]",
+						"description": "Set Animation.",
+						"params": {
+							"anim": { "name":"Animation", "desc":"Animation", 
+							"items": {
+								"none":"None",
+								"scale quadratic":"Scale Quadratic",
+								"scale elastic":"Scale Elastic",
+								"down":"Down",
+								"up":"Up",
+								"left":"Left",
+								"right":"Right"
+								}
+							}
+						}
+					},
+					"setHoverAnimation": {
+						"list-name": "Set Hover Animation",
+						"display-text": "{my} Set Hover Animation To [i]{0}[/i]",
+						"description": "Set Animation.",
+						"params": {
+							"anim": { "name":"Animation", "desc":"Animation",
+								"items": {
+									"none":"None",
+									"scale quadratic":"Scale Quadratic",
+									"scale elastic":"Scale Elastic",
+									"down":"Down",
+									"up":"Up",
+									"left":"Left",
+									"right":"Right"
+									}
+							}
+						}
+					},
+					"setFocusAnimation": {
+						"list-name": "Set Focus Animation",
+						"display-text": "{my} Set Focus Animation To [i]{0}[/i]",
+						"description": "Set Animation.",
+						"params": {
+							"anim": { "name":"Animation", "desc":"Animation",
+								"items": {
+									"none":"None",
+									"scale quadratic":"Scale Quadratic",
+									"scale elastic":"Scale Elastic",
+									"down":"Down",
+									"up":"Up",
+									"left":"Left",
+									"right":"Right"
+									}
+							}
+						}
+					},
+
+					"setNormalColor": {
+						"list-name": "Set Normal Color",
+						"display-text": "{my} Set Normal Color To [i]{0}[/i]",
+						"description": "Set Color.",
+						"params": {
+							"color": { "name":"Color", "desc":"Color"}
+						}
+					},
+					"setHoverColor": {
+						"list-name": "Set Hover Color",
+						"display-text": "{my} Set Hover Color To [i]{0}[/i]",
+						"description": "Set Color.",
+						"params": {
+							"color": { "name":"Color", "desc":"Color"}
+						}
+					},
+					"setClickedColor": {
+						"list-name": "Set Clicked Color",
+						"display-text": "{my} Set Clicked Color To [i]{0}[/i]",
+						"description": "Set Color.",
+						"params": {
+							"color": { "name":"Color", "desc":"Color"}
+						}
+					},
+					"setFocusColor": {
+						"list-name": "Set Focus Color",
+						"display-text": "{my} Set Focus Color To [i]{0}[/i]",
+						"description": "Set Color.",
+						"params": {
+							"color": { "name":"Color", "desc":"Color"}
+						}
+					}
+
+				},
+				"expressions": {
+				}
+			}
+		}
+	}
+}

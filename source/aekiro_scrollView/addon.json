@@ -1,0 +1,31 @@
+{
+  "is-c3-addon": true,
+  "type": "behavior",
+  "name": "Scroll View",
+  "id": "aekiro_scrollView",
+  "version": "1.817",
+  "author": "Aekiro",
+  "website": "https://www.construct.net",
+  "documentation": "https://www.construct.net",
+  "description": "Scrollable area.",
+  "editor-scripts": [
+    "behavior.js",
+    "type.js",
+    "instance.js"
+  ],
+  "file-list": [
+    "c3runtime/behavior.js",
+    "c3runtime/actions.js",
+    "c3runtime/conditions.js",
+    "c3runtime/expressions.js",
+    "c3runtime/instance.js",
+    "c3runtime/type.js",
+    "lang/en-US.json",
+    "aces.json",
+    "addon.json",
+    "icon.svg",
+    "behavior.js",
+    "type.js",
+    "instance.js"
+  ]
+}

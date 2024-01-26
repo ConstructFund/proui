@@ -1,0 +1,76 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for ProUI.",
+	"text": {
+		"plugins": {
+			"aekiro_proui": {
+				"name": "ProUI",
+				"description": "Must be added to any project using the ProUI behaviors.",
+				"help-url": "https://later.com",
+				"properties": {
+					"stopClickPropagation": {
+						"name": "Stop Click Propagation",
+						"desc": "If yes clicks only trigger the top most button.",
+						"items": {
+							"no":"No",
+							"yes":"Yes"
+							}
+						}
+				},
+				"aceCategories": {
+					"proui": "ProUI"
+				},
+				"conditions": {
+					"isdialogopened0": {
+						"list-name": "Is Any Dialog Opened",
+						"display-text": "Is Any Dialog Opened",
+						"description": "Is Any Dialog Opened."
+						},
+					"onanybuttonclicked1": {
+						"list-name": "On Any Button Clicked",
+						"display-text": "On Any Button Clicked",
+						"description": "On Any Button Clicked."
+						}
+				},
+				"actions": {
+					"init": {
+						"list-name": "Initialise",
+						"display-text": "Initialise",
+						"description": "Initialise."
+					},
+					"setinputignored0": {
+						"list-name": "Ignore All Input",
+						"display-text": "Ignore All Input to [i]{0}[/i]",
+						"description": "Enable/Disable input reception.",
+						"params": {
+							"input_state2": { "name":"Input state", "desc":"The state of the inputs.", "items":{"yes":"Yes","no":"No"}}
+						}
+					},
+					"clonegameobject": {
+						"list-name": "Clone Game Object",
+						"display-text": "{my} Clone Game Object from [i]{0}[/i] on layer [b]{1}[/b] at (x = [b]{2}[/b] , y = [b]{3}[/b]) with name = {4} and parent name = {5}",
+						"description": "Clone Game Object.",
+						"params": {
+							"json": { "name":"JSON", "desc":"JSON."},
+							"layer0": { "name":"Layer", "desc":"The layer name or number to create the instance on."},
+							"x": { "name":"X", "desc":"X in global coordinates"},
+							"y": { "name":"Y", "desc":"Y in global coordinates"},
+							"name": { "name":"Name", "desc":"If left empty a name will be given automatically."},
+							"parentName": { "name":"Parent Name", "desc":"Leave empty if no parent."}
+						}
+					},
+					"setvolume": {
+						"list-name": "Set UI Volume",
+						"display-text": "{my} Set Volume to [i]{0}[/i]",
+						"description": "Set the volume of the audio emitted by ProUI UI elements.",
+						"params": {
+							"volume": { "name":"Volume", "desc":"Volume"}
+						}
+					}
+				},
+				"expressions": {
+				}
+			}
+		}
+	}
+}

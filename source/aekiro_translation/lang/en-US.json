@@ -1,0 +1,47 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Translation.",
+	"text": {
+		"plugins": {
+			"aekiro_translation": {
+				"name": "Translation",
+				"description": "Translation.",
+				"help-url": "https://later.com",
+				"properties": {
+				},
+				"aceCategories": {
+				},
+				"conditions": {
+				},
+				"actions": {
+					"translateall0": {
+						"list-name": "Translate all",
+						"display-text": "Translate all to {0}",
+						"description": "Translate all",
+						"params": {
+							"language0": { "name":"Language", "desc":"Language"}
+						}
+					},
+					"setdatabyjsonstring0": {
+						"list-name": "Set Data From Json String",
+						"display-text": "Set data to [b]{0}[/b]",
+						"description": "SetDataByJsonString.",
+						"params": {
+							"data0": { "name":"Data", "desc":"Data."}
+						}
+					}
+				},
+				"expressions": {
+					"get": {
+						"description": "Get a translation by key.",
+						"translated-name": "get",
+						"params": {
+							"key": { "name":"Key", "desc":"Key"},
+							"language0": { "name":"Language", "desc":"Language"}
+						}
+					}
+				}
+			}
+		}
+	}
+}

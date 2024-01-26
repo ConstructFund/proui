@@ -1,0 +1,33 @@
+{
+  "is-c3-addon": true,
+  "type": "plugin",
+  "name": "ProUI",
+  "id": "aekiro_proui",
+  "version": "1.817",
+  "author": "Aekiro",
+  "website": "https://later.com",
+  "documentation": "https://later.com",
+  "description": "Must be added to any project using the ProUI behaviors.",
+  "editor-scripts": [
+    "plugin.js",
+    "type.js",
+    "instance.js"
+  ],
+  "file-list": [
+    "lodash.custom.min.js",
+    "Tween.js",
+    "c3runtime/plugin.js",
+    "c3runtime/actions.js",
+    "c3runtime/conditions.js",
+    "c3runtime/expressions.js",
+    "c3runtime/instance.js",
+    "c3runtime/type.js",
+    "lang/en-US.json",
+    "aces.json",
+    "addon.json",
+    "icon.svg",
+    "plugin.js",
+    "type.js",
+    "instance.js"
+  ]
+}

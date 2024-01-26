@@ -1,0 +1,32 @@
+{
+  "languageTag": "en-US",
+  "fileDescription": "Strings for RemoteSprite Plugin",
+  "text": {
+    "plugins": {
+      "aekiro_remotesprite": {
+        "name": "Remote Sprite",
+        "description": "Remote Sprite",
+        "help-url": "https://later.com",
+        "properties": {},
+        "aceCategories": {
+          "load": "Load"
+        },
+        "conditions": {},
+        "actions": {
+          "loadfromurl": {
+            "list-name": "Load From URL",
+            "display-text": "Load From URL {0}",
+            "description": "Load From URL.",
+            "params": {
+              "url": {
+                "name": "URL",
+                "desc": "URL"
+              }
+            }
+          }
+        },
+        "expressions": {}
+      }
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "languageTag": "en-US",
+  "fileDescription": "Strings for RemoteSprite Plugin",
+  "text": {
+    "plugins": {
+      "aekiro_remotesprite": {
+        "name": "Remote Sprite",
+        "description": "Remote Sprite",
+        "help-url": "https://later.com",
+        "properties": {},
+        "aceCategories": {
+          "load": "Load",
+          "appearance": "Appearance"
+        },
+        "conditions": {},
+        "actions": {
+          "loadfromurl": {
+            "list-name": "Load From URL",
+            "display-text": "Load From URL {0} with size = {1}",
+            "description": "Load From URL.",
+            "params": {
+              "url": {
+                "name": "URL",
+                "desc": "URL"
+              },
+              "size": {
+                "name": "Size",
+                "desc": "Whether to resize the sprite to the size of the loaded image, or stretch it to the current size.",
+                "items": {
+                    "resize-to-image-size": "Resize to image size",
+                    "keep-current-size": "Keep current size"
+                }
+            }
+            }
+          },
+          "set-blend-mode": {
+            "list-name": "Set blend mode",
+            "display-text": "Set blend mode to [i]{0}[/i]",
+            "description": "Set the background blend mode for this object.",
+            "params": {
+                "blend-mode": {
+                    "name": "Blend mode",
+                    "desc": "Choose the new blend mode for this object.",
+                    "items": {
+                        "normal": "Normal",
+                        "additive": "Additive",
+                        "xor": "XOR",
+                        "copy": "Copy",
+                        "destination-over": "Destination over",
+                        "source-in": "Source in",
+                        "destination-in": "Destination in",
+                        "source-out": "Source out",
+                        "destination-out": "Destination out",
+                        "source-atop": "Source atop",
+                        "destination-atop": "Destination atop"
+                    }
+                }
+            }
+        }
+        },
+        "expressions": {}
+      }
+    }
+  }
+}

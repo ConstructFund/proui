@@ -1,0 +1,69 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Progress.",
+	"text": {
+		"behaviors": {
+			"aekiro_progress": {
+				"name": "Progress",
+				"description": "Makes a sprite/9-patch/tiled background object behave like a progress bar.",
+				"help-url": "https://later.com",
+				"properties": {
+					"max-value": {
+						"name": "Max value",
+						"desc": "The max value of the progress."
+						},
+					"value": {
+						"name": "Value",
+						"desc": "The value of the progress."
+						},
+					"animation": {
+						"name": "Animation",
+						"desc": "Tweening function of the progress animation",
+						"items": {
+							"none":"None",
+							"linear":"Linear",
+							"quadratic":"Quadratic"
+							}
+						},
+					"type": {
+						"name": "Type",
+						"desc": "The type of the progress.",
+						"items": {
+							"horizontal":"Horizontal",
+							"vertical":"Vertical"
+							}
+						}
+				},
+				"aceCategories": {
+				},
+				"conditions": {
+				},
+				"actions": {
+					"setvalue0": {
+						"list-name": "Set",
+						"display-text": "Set {my} to [i]{0}[/i] with {1} animation",
+						"description": "Set the value of the progress bar.",
+						"params": {
+							"value0": { "name":"value", "desc":"The new value of the progress bar"},
+							"animation": { "name":"Animation", "desc":"The way the progress bar animates when its value changes.", "items":{"none":"None","linear":"Linear","quadratic":"Quadratic"}}
+						}
+					},
+					"setMaxValue": {
+						"list-name": "Set Max Value",
+						"display-text": "Set {my} Max Value to [i]{0}[/i]",
+						"description": "Set the max value of the progress bar.",
+						"params": {
+							"max": { "name":"value", "desc":"The new max value of the progress bar"}
+						}
+					}
+				},
+				"expressions": {
+					"value0": {
+						"description": "Get the value of the progress bar.",
+						"translated-name": "value"
+						}
+				}
+			}
+		}
+	}
+}

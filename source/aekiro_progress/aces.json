@@ -1,0 +1,34 @@
+{
+	"": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"id": "setvalue0",
+				"scriptName": "setValue",
+				"highlight": false,
+				"params": [
+					{"id":"value0", "type":"number"},
+					{"id":"animation", "type":"combo", "items":["none","linear","quadratic"]}
+				]
+			},
+			{
+				"id": "setMaxValue",
+				"scriptName": "SetMaxValue",
+				"highlight": false,
+				"params": [
+					{"id":"max", "type":"number"}
+				]
+			}
+		],
+		"expressions": [
+			{
+				"id": "value0",
+				"expressionName": "value",
+				"scriptName": "value",
+				"highlight": false,
+				"returnType": "number"
+			}
+		]
+	}
+}

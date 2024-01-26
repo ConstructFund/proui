@@ -1,0 +1,40 @@
+{
+	"": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"id": "scrollto0",
+				"scriptName": "ScrollTo",
+				"highlight": false,
+				"params": [
+					{"id":"x0", "type":"number"},
+					{"id":"y1", "type":"number"},
+					{"id":"target_type4", "type":"combo", "items":["absolute","percentage"]},
+					{"id":"smooth_scroll_factor5", "type":"number", "initialValue":"0.3"}
+				]
+			},
+			{
+				"id": "scrollby",
+				"scriptName": "ScrollBy",
+				"highlight": false,
+				"params": [
+					{"id":"x0", "type":"number"},
+					{"id":"y1", "type":"number"},
+					{"id":"target_type4", "type":"combo", "items":["absolute","percentage"]},
+					{"id":"smooth_scroll_factor5", "type":"number", "initialValue":"0.3"}
+				]
+			},
+			{
+				"id": "setenabled1",
+				"scriptName": "setEnabled",
+				"highlight": false,
+				"params": [
+					{"id":"state2", "type":"combo", "items":["disabled","enabled"]}
+				]
+			}
+		],
+		"expressions": [
+		]
+	}
+}

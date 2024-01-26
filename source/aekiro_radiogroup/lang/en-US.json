@@ -1,0 +1,52 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Radio Group.",
+	"text": {
+		"behaviors": {
+			"aekiro_radiogroup": {
+				"name": "Radio Group",
+				"description": "Makes a sprite object behave like a radio group (to be used with a radio button).",
+				"help-url": "https://later.com",
+				"properties": {
+					"value": {
+						"name": "Value",
+						"desc": "The initial value of the radio group."
+						}
+				},
+				"aceCategories": {
+				},
+				"conditions": {
+					"isenabled0": {
+						"list-name": "Is Enabled",
+						"display-text": "{my} is enabled",
+						"description": "True if the radio group is currently enabled."
+						}
+				},
+				"actions": {
+					"setvalue0": {
+						"list-name": "Set",
+						"display-text": "Set to [i]{0}[/i]",
+						"description": "Set the value of the radio group.",
+						"params": {
+							"value0": { "name":"value", "desc":"The new value of the model"}
+						}
+					},
+					"setenabled1": {
+						"list-name": "Set enabled",
+						"display-text": "Set all the radio buttons to [i]{0}[/i]",
+						"description": "Enable/Disable all the radiobuttons button.",
+						"params": {
+							"state2": { "name":"State", "desc":"The state of all the radio buttons of this radio group.", "items":{"disabled":"Disabled","enabled":"Enabled"}}
+						}
+					}
+				},
+				"expressions": {
+					"value0": {
+						"description": "Get the value of the radio group.",
+						"translated-name": "value"
+						}
+				}
+			}
+		}
+	}
+}

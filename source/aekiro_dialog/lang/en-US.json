@@ -1,0 +1,152 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Dialog.",
+	"text": {
+		"behaviors": {
+			"aekiro_dialog": {
+				"name": "Dialog",
+				"description": "Makes a sprite/9patch/tiled background object behave like a dialog.",
+				"help-url": "https://later.com",
+				"properties": {
+					"open-animation": {
+						"name": "Open Animation",
+						"desc": "Animation to play when opened",
+						"items": {
+							"none":"None",
+							"slidedown":"SlideDown",
+							"slideup":"SlideUp",
+							"slideleft":"SlideLeft",
+							"slideright":"SlideRight",
+							"scaledown":"ScaleDown",
+							"scaleup":"ScaleUp"
+							}
+						},
+					"open-animation-tweenning": {
+						"name": "Open Animation Tweenning",
+						"desc": "Tweening function of the opening animation.",
+						"items": {
+							"linear":"Linear",
+							"quadratic out":"Quadratic Out",
+							"quartic out":"Quartic Out",
+							"exponential out":"Exponential Out",
+							"circular out":"Circular Out",
+							"back out":"Back Out",
+							"elastic out":"Elastic Out",
+							"bounce out":"Bounce Out"
+							}
+						},
+					"open-animation-duration": {
+						"name": "Open Animation Duration",
+						"desc": "The duration of the open animation."
+						},
+					"open-sound": {
+						"name": "Open Sound",
+						"desc": "Sound to play when the dialog opens."
+						},
+					"close-animation": {
+						"name": "Close Animation",
+						"desc": "Animation to play when opened",
+						"items": {
+							"none":"None",
+							"reverse":"Reverse",
+							"slidedown":"SlideDown",
+							"slideup":"SlideUp",
+							"slideleft":"SlideLeft",
+							"slideright":"SlideRight",
+							"scaledown":"ScaleDown",
+							"scaleup":"ScaleUp"
+							}
+						},
+					"close-animation-tweenning": {
+						"name": "Close Animation Tweenning",
+						"desc": "Tweening function of the closing animation.",
+						"items": {
+							"linear":"Linear",
+							"quadratic out":"Quadratic Out",
+							"quartic out":"Quartic Out",
+							"exponential out":"Exponential Out",
+							"circular out":"Circular Out",
+							"back out":"Back Out",
+							"elastic out":"Elastic Out",
+							"bounce out":"Bounce Out"
+							}
+						},
+					"close-animation-duration": {
+						"name": "Close Animation Duration",
+						"desc": "The duration of the close animation."
+						},
+					"close-sound": {
+						"name": "Close Sound",
+						"desc": "Sound to play when the dialog closes."
+						},
+					"close-button-name": {
+						"name": "Close Button Name",
+						"desc": "The Name of the close button"
+						},
+					"is-modal": {
+						"name": "Is Modal",
+						"desc": "If modal, buttons underneath can not be clicked.",
+						"items": {
+							"no":"No",
+							"yes":"Yes"
+							}
+						}
+				},
+				"aceCategories": {
+				},
+				"conditions": {
+					"ondialogopened0": {
+						"list-name": "On Dialog Opened",
+						"display-text": "On {my} Opened",
+						"description": "Triggered when the dialog is opened."
+						},
+					"ondialogclosed1": {
+						"list-name": "On Dialog Closed",
+						"display-text": "On {my} Closed",
+						"description": "Triggered when the dialog is closed."
+						},
+					"isopened2": {
+						"list-name": "Is Dialog Opened",
+						"display-text": "Is {my} Opened",
+						"description": "True if the dialog is opened."
+						}
+				},
+				"actions": {
+					"open0": {
+						"list-name": "Open",
+						"display-text": "Open {my} at ({0},{1}) and center = {2}",
+						"description": "Open the dialog",
+						"params": {
+							"target_x0": { "name":"Target X", "desc":"Target X of the dialog. Ignored if center = yes."},
+							"target_y1": { "name":"Target Y", "desc":"Target Y of the dialog. Ignored if center = yes."},
+							"center4": { "name":"Center", "desc":"Automatically center in the viewport. TargetX/Y will be ignored.", "items":{"no":"No","yes":"Yes"}}
+						}
+					},
+					"close1": {
+						"list-name": "Close",
+						"display-text": "Close {my}",
+						"description": "Close the dialog"
+					},
+					"setOpenSoundVolume": {
+						"list-name": "Set Open Sound Volume",
+						"display-text": "{my} Set Open Sound Volume to [i]{0}[/i]",
+						"description": "Set Open Sound Volume.",
+						"params": {
+							"volume": { "name":"Volume", "desc":"Volume"}
+						}
+					},
+					"setCloseSoundVolume": {
+						"list-name": "Set Close Sound Volume",
+						"display-text": "{my} Set Close Sound Volume to [i]{0}[/i]",
+						"description": "Set Close Sound Volume.",
+						"params": {
+							"volume": { "name":"Volume", "desc":"Volume"}
+						}
+					}
+				},
+				"expressions": {
+				}
+			}
+		}
+	}
+}

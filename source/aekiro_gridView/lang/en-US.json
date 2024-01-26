@@ -1,0 +1,90 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Grid View.",
+	"text": {
+		"behaviors": {
+			"aekiro_gridview": {
+				"name": "Grid View",
+				"description": "Layout items in a grid.",
+				"help-url": "https://later.com",
+				"properties": {
+					"item-name": {
+						"name": "Item Name",
+						"desc": "The name of the grid item."
+						},
+					"max-columns": {
+						"name": "Max Columns",
+						"desc": "Max number of columns. -1 if unlimited."
+						},
+					"max-rows": {
+						"name": "Max Rows",
+						"desc": "Max number of rows. -1 if unlimited."
+						},
+					"vertical-spacing": {
+						"name": "Vertical spacing",
+						"desc": "Space between the columns."
+						},
+					"horizontal-spacing": {
+						"name": "Horizontal spacing",
+						"desc": "Space between the rows."
+						},
+					"vertical-padding": {
+						"name": "Vertical padding",
+						"desc": "Space after and before the right and left edges of the grid."
+						},
+					"horizontal-padding": {
+						"name": "Horizontal padding",
+						"desc": "Space after and before the top and bottom edges of the grid."
+						}
+				},
+				"aceCategories": {
+				},
+				"conditions": {
+					"onrender0": {
+						"list-name": "On Render",
+						"display-text": "On Render",
+						"description": "Triggered when the grid view is built."
+						}
+				},
+				"actions": {
+					"setdatabyjsonstring0": {
+						"list-name": "Set Data From Json String",
+						"display-text": "Set {my} data to [b]{0}[/b] with root key = {1}",
+						"description": "SetDataByJsonString.",
+						"params": {
+							"data0": { "name":"Data", "desc":"Data."},
+							"root": { "name":"Root key", "desc":"Root key."}
+						}
+					},
+					"setdatabyjsonobject": {
+						"list-name": "Set Data From Json Object",
+						"display-text": "Set {my} data to [b]{0}[/b] with root key = {1}",
+						"description": "SetDataByJsonObject.",
+						"params": {
+							"data0": { "name":"Data", "desc":"Data."},
+							"root": { "name":"Root key", "desc":"Root key."}
+						}
+					},
+					"clear1": {
+						"list-name": "Clear",
+						"display-text": "Clear",
+						"description": "Clear the grid."
+					}
+				},
+				"expressions": {
+					"at0": {
+						"description": "Get the value at a path.",
+						"translated-name": "at",
+						"params": {
+							"path0": { "name":"Path", "desc":"Path"}
+						}
+						},
+					"count1": {
+						"description": "Get the number of keys in the data array.",
+						"translated-name": "count"
+						}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,117 @@
+{
+	"languageTag": "en-US",
+	"fileDescription": "Strings for Slider Bar.",
+	"text": {
+		"behaviors": {
+			"aekiro_sliderbar": {
+				"name": "Slider Bar",
+				"description": "Slider bar.",
+				"help-url": "https://later.com",
+				"properties": {
+					"enabled": {
+						"name": "Enabled",
+						"desc": "Enable/Disable the slider bar.",
+						"items": {
+							"no":"No",
+							"yes":"Yes"
+							}
+						},
+					"value": {
+						"name": "Value",
+						"desc": "Value of the slider bar."
+						},
+					"minimum": {
+						"name": "Minimum",
+						"desc": "The minimum value of the slider bar."
+						},
+					"maximum": {
+						"name": "Maximum",
+						"desc": "The maximum value of the slider bar."
+						},
+					"step": {
+						"name": "Step",
+						"desc": "The step value, giving the increments along the slider."
+						},
+					"padding": {
+						"name": "Padding",
+						"desc": "Slider button padding."
+						},
+					"valueChanged-sound": {
+						"name": "Value Changed Sound",
+						"desc": "Sound to play when slider change value"
+					},
+					"type": {
+						"name": "Type",
+						"desc": "Type of the slider bar.",
+						"items": {
+							"horizontal":"Horizontal",
+							"vertical":"Vertical"
+							}
+					}
+				},
+				"aceCategories": {
+				},
+				"conditions": {
+					"issliding0": {
+						"list-name": "Is Sliding",
+						"display-text": "{my} Is Sliding",
+						"description": "Triggered when the slider is being dragged."
+						},
+					"onchanged": {
+						"list-name": "On Changed",
+						"display-text": "On Changed",
+						"description": "Triggered when the slider bar value has changed."
+						}
+				},
+				"actions": {
+					"setenabled0": {
+						"list-name": "Set Enabled",
+						"display-text": "Set {my} to [i]{0}[/i]",
+						"description": "Enable/Disable the slider bar.",
+						"params": {
+							"state2": { "name":"State", "desc":"The state of the slider bar.", "items":{"disabled":"Disabled","enabled":"Enabled"}}
+						}
+					},
+					"setvalue1": {
+						"list-name": "Set",
+						"display-text": "Set {my} to [i]{0}[/i]",
+						"description": "Set the value of the slider bar.",
+						"params": {
+							"value0": { "name":"value", "desc":"The new value of the slider bar"}
+						}
+					},
+					"setmaxvalue": {
+						"list-name": "Set Max Value",
+						"display-text": "Set {my} max value to [i]{0}[/i]",
+						"description": "Set the max value of the slider bar.",
+						"params": {
+							"value0": { "name":"value", "desc":"The new max value of the slider bar"}
+						}
+					},
+					"setminvalue": {
+						"list-name": "Set Min Value",
+						"display-text": "Set {my} min value to [i]{0}[/i]",
+						"description": "Set the min value of the slider bar.",
+						"params": {
+							"value0": { "name":"value", "desc":"The new min value of the slider bar"}
+						}
+					},
+					"setstep": {
+						"list-name": "Set Step",
+						"display-text": "Set {my} step to [i]{0}[/i]",
+						"description": "Set the step of the slider bar.",
+						"params": {
+							"value0": { "name":"value", "desc":"The new step of the slider bar"}
+						}
+					}
+				},
+				"expressions": {
+					"value0": {
+						"description": "Get the value of the slider bar.",
+						"translated-name": "value"
+						}
+				}
+			}
+		}
+	}
+}

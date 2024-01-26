@@ -1,0 +1,39 @@
+{
+	"": {
+		"conditions": [
+			{
+				"id": "onrender0",
+				"scriptName": "OnRender",
+				"isTrigger": "true",
+				"highlight": false
+			}
+		],
+		"actions": [
+			{
+				"id": "setdatabyjsonstring0",
+				"scriptName": "SetDataByJsonString",
+				"highlight": false,
+				"params": [
+					{"id":"data0", "type":"string"},
+					{"id":"root", "type":"string"}
+				]
+			},
+			{
+				"id": "setdatabyjsonobject",
+				"scriptName": "SetDataByJsonObject",
+				"highlight": false,
+				"params": [
+					{"id":"data0", "type":"object", "allowedPluginIds":["Json"]},
+					{"id":"root", "type":"string"}
+				]
+			},
+			{
+				"id": "clear1",
+				"scriptName": "Clear",
+				"highlight": false
+			}
+		],
+		"expressions": [
+		]
+	}
+}

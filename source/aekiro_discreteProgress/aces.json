@@ -1,0 +1,25 @@
+{
+	"": {
+		"conditions": [
+		],
+		"actions": [
+			{
+				"id": "setvalue0",
+				"scriptName": "setValue",
+				"highlight": false,
+				"params": [
+					{"id":"value0", "type":"number"}
+				]
+			}
+		],
+		"expressions": [
+			{
+				"id": "value0",
+				"expressionName": "value",
+				"scriptName": "value",
+				"highlight": false,
+				"returnType": "number"
+			}
+		]
+	}
+}

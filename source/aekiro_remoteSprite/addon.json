@@ -1,0 +1,31 @@
+{
+  "is-c3-addon": true,
+  "type": "plugin",
+  "name": "Remote Sprite",
+  "id": "aekiro_remoteSprite",
+  "version": "1.817",
+  "author": "Akeiro",
+  "website": "https://www.later.com",
+  "documentation": "https://www.later.com",
+  "description": "Load and show a picture by URL",
+  "editor-scripts": [
+    "plugin.js",
+    "type.js",
+    "instance.js"
+  ],
+  "file-list": [
+    "c3runtime/plugin.js",
+    "c3runtime/type.js",
+    "c3runtime/instance.js",
+    "c3runtime/conditions.js",
+    "c3runtime/actions.js",
+    "c3runtime/expressions.js",
+    "lang/en-US.json",
+    "aces.json",
+    "addon.json",
+    "icon.svg",
+    "instance.js",
+    "plugin.js",
+    "type.js"
+  ]
+}

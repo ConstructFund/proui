@@ -1,0 +1,109 @@
+{
+	"": {
+		"conditions": [
+			{
+				"id": "onmouseenter0",
+				"scriptName": "OnMouseEnter",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"id": "onmouseleave1",
+				"scriptName": "OnMouseLeave",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"id": "onclicked3",
+				"scriptName": "OnClicked",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"id": "onfocused",
+				"scriptName": "OnFocused",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"id": "onunfocused",
+				"scriptName": "OnUnFocused",
+				"isTrigger": "true",
+				"highlight": false
+			},
+			{
+				"id": "isfocused",
+				"scriptName": "IsFocused",
+				"highlight": false
+			},
+			{
+				"id": "isclickable",
+				"scriptName": "IsClickable",
+				"highlight": false
+			}
+		],
+		"actions": [
+			{
+				"id": "setenabled0",
+				"scriptName": "setEnabled",
+				"highlight": false,
+				"params": [
+					{"id":"state2", "type":"combo", "items":["disabled","enabled"]}
+				]
+			},
+			{
+				"id": "setignoreinput",
+				"scriptName": "SetIgnoreInput",
+				"highlight": false,
+				"params": [
+					{"id":"state", "type":"combo", "items":["no","yes","auto"]}
+				]
+			},
+			{
+				"id": "setClickSoundVolume",
+				"scriptName": "SetClickSoundVolume",
+				"highlight": false,
+				"params": [
+					{"id":"volume", "type":"number"}
+				]
+			},
+			{
+				"id": "setHoverSoundVolume",
+				"scriptName": "SetHoverSoundVolume",
+				"highlight": false,
+				"params": [
+					{"id":"volume", "type":"number"}
+				]
+			},
+			{
+				"id": "setName",
+				"scriptName": "SetName",
+				"highlight": false,
+				"params": [
+					{"id":"name", "type":"string"}
+				]
+			},
+			{
+				"id": "simulateclick",
+				"scriptName": "SimulateClick"
+			},
+			{
+				"id": "setFocused",
+				"scriptName": "SetFocused",
+				"highlight": false,
+				"params": [
+					{"id":"state", "type":"combo", "items":["no","yes"]}
+				]
+			}
+		],
+		"expressions": [
+			{
+				"id": "name0",
+				"expressionName": "name",
+				"scriptName": "name",
+				"highlight": false,
+				"returnType": "string"
+			}
+		]
+	}
+}
