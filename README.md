@@ -1,6 +1,9 @@
 # proui
  Aekiro's ProUI for Construct 3
 
+## Support maintanence of this project by contributing to the Construct Community fund
+## [Construct Community Fund](http://opencollective.com/construct-community/contribute)
+
  Open for PRs, in particular compatability fixes for new versions of C3
 
  ## Latest Release
