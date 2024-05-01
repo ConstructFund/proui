@@ -3,7 +3,7 @@
 
 {
 	const BEHAVIOR_ID = "aekiro_discreteProgressPart";
-	const BEHAVIOR_VERSION = "1.818";
+	const BEHAVIOR_VERSION = "1.819";
 	const BEHAVIOR_CATEGORY = "other";
 	const SDK = self.SDK;
 	const lang = self.lang;

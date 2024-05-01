@@ -5,7 +5,7 @@
 	const SDK = self.SDK;
 	const lang = self.lang;
 	const BEHAVIOR_ID = "aekiro_translationB";
-	const BEHAVIOR_VERSION = "1.818";
+	const BEHAVIOR_VERSION = "1.819";
 	const BEHAVIOR_CATEGORY = "other";
 	const BEHAVIOR_CLASS = SDK.Behaviors.aekiro_translationB = class aekiro_translationB extends SDK.IBehaviorBase
 	{

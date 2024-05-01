@@ -5,7 +5,7 @@
 	const SDK = self.SDK;
 	const lang = self.lang;
 	const BEHAVIOR_ID = "aekiro_radiobutton";
-	const BEHAVIOR_VERSION = "1.818";
+	const BEHAVIOR_VERSION = "1.819";
 	const BEHAVIOR_CATEGORY = "other";
 	const BEHAVIOR_CLASS = SDK.Behaviors.aekiro_radiobutton = class aekiro_radiobutton extends SDK.IBehaviorBase
 	{

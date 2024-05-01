@@ -42,7 +42,8 @@
 	
 			var behaviorBase,insts,audioSources;
 			for (var i = 0, l = list.length; i < l; i++) {
-				behaviorBase = this.GetRuntime()._addonManager._behaviorsByCtor.get(list[i]);
+				const addonManager = this.GetRuntime()._addonManager ? this.GetRuntime()._addonManager : this.GetRuntime()._pluginManager;
+				behaviorBase = addonManager._behaviorsByCtor.get(list[i]);
 				if(!behaviorBase)continue;
 				insts = behaviorBase.GetInstances();
 				for (var j = 0, m = insts.length; j < m; j++) {
@@ -411,7 +412,8 @@ globalThis.aekiro_goManager = {
 	},
 	
 	registerGameObjects : function(){
-		var aekiro_gameobjectBehaviorBase = this.runtime._addonManager._behaviorsByCtor.get(C3.Behaviors.aekiro_gameobject);
+		const addonManager = this.runtime._addonManager ? this.runtime._addonManager : this.runtime._pluginManager;
+		var aekiro_gameobjectBehaviorBase = addonManager._behaviorsByCtor.get(C3.Behaviors.aekiro_gameobject);
 		if(!aekiro_gameobjectBehaviorBase) return;
 		
 		var insts = aekiro_gameobjectBehaviorBase.GetInstances();

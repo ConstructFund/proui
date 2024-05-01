@@ -26,7 +26,8 @@
 		translateAll (lang){
 			if(!this.data[lang])return;
 
-			var aekiro_translationBehaviorBase = this.GetRuntime()._addonManager._behaviorsByCtor.get(C3.Behaviors.aekiro_translationB);
+			const addonManager = this.GetRuntime()._addonManager ? this.GetRuntime()._addonManager : this.GetRuntime()._pluginManager;
+			var aekiro_translationBehaviorBase = addonManager._behaviorsByCtor.get(C3.Behaviors.aekiro_translationB);
 			var insts = aekiro_translationBehaviorBase.GetInstances();
 
 			var key,aekiro_translation,value;
