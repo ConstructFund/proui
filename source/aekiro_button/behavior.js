@@ -6,7 +6,7 @@
 	const lang = self.lang;
 	
 	const BEHAVIOR_ID = "aekiro_button";
-	const BEHAVIOR_VERSION = "1.819";
+	const BEHAVIOR_VERSION = "1.820";
 	const BEHAVIOR_CATEGORY = "other";
 	const BEHAVIOR_CLASS = SDK.Behaviors.aekiro_button = class aekiro_button extends SDK.IBehaviorBase
 	{

@@ -7,7 +7,7 @@
 	const lang = self.lang;
 	
 	const BEHAVIOR_ID = "aekiro_dialog";
-	const BEHAVIOR_VERSION = "1.819";
+	const BEHAVIOR_VERSION = "1.820";
 	const BEHAVIOR_CATEGORY = "other";
 	const BEHAVIOR_CLASS = SDK.Behaviors.aekiro_dialog = class aekiro_dialog extends SDK.IBehaviorBase
 	{

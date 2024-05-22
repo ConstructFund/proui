@@ -3,7 +3,7 @@
 	const SDK = self.SDK;
 	const lang = self.lang;
     const PLUGIN_ID = "aekiro_remoteSprite";
-    const PLUGIN_VERSION = "1.819";
+    const PLUGIN_VERSION = "1.820";
     const PLUGIN_CATEGORY = "general";
 
     let app = null;

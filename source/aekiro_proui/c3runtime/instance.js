@@ -43,8 +43,13 @@
 			var behaviorBase,insts,audioSources;
 			for (var i = 0, l = list.length; i < l; i++) {
 				const addonManager = this.GetRuntime()._addonManager ? this.GetRuntime()._addonManager : this.GetRuntime()._pluginManager;
-				behaviorBase = addonManager._behaviorsByCtor.get(list[i]);
-				if(!behaviorBase)continue;
+				if (C3?.AddonManager?.GetBehaviorByConstructorFunction)
+				{
+					behaviorBase = C3.AddonManager.GetBehaviorByConstructorFunction(C3.Behaviors.aekiro_gameobject);
+				} else {
+					behaviorBase = addonManager._behaviorsByCtor.get(C3.Behaviors.aekiro_gameobject);
+				}
+						if(!behaviorBase)continue;
 				insts = behaviorBase.GetInstances();
 				for (var j = 0, m = insts.length; j < m; j++) {
 					audioSources = insts[j].GetUnsavedDataMap().audioSources;
@@ -413,7 +418,13 @@ globalThis.aekiro_goManager = {
 	
 	registerGameObjects : function(){
 		const addonManager = this.runtime._addonManager ? this.runtime._addonManager : this.runtime._pluginManager;
-		var aekiro_gameobjectBehaviorBase = addonManager._behaviorsByCtor.get(C3.Behaviors.aekiro_gameobject);
+		var aekiro_gameobjectBehaviorBase;
+		if (C3?.AddonManager?.GetBehaviorByConstructorFunction)
+		{
+			aekiro_gameobjectBehaviorBase = C3.AddonManager.GetBehaviorByConstructorFunction(C3.Behaviors.aekiro_gameobject);
+		} else {
+			aekiro_gameobjectBehaviorBase = addonManager._behaviorsByCtor.get(C3.Behaviors.aekiro_gameobject);
+		}
 		if(!aekiro_gameobjectBehaviorBase) return;
 		
 		var insts = aekiro_gameobjectBehaviorBase.GetInstances();

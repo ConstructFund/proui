@@ -5,7 +5,7 @@
 	const SDK = self.SDK;
 	const lang = self.lang;
 	const BEHAVIOR_ID = "aekiro_gameobject";
-	const BEHAVIOR_VERSION = "1.819";
+	const BEHAVIOR_VERSION = "1.820";
 	const BEHAVIOR_CATEGORY = "other";
 	const BEHAVIOR_CLASS = SDK.Behaviors.aekiro_gameobject = class aekiro_gameobject extends SDK.IBehaviorBase
 	{
