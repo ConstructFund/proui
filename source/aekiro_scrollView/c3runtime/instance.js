@@ -580,13 +580,17 @@
 		
 		boundSlider(slider){
 			if(slider == "v" && this.vSlider && this.vScrollBar){
-				var sy = this.vScrollBarWi.GetBoundingBox().getTop()+(this.vSliderWi.GetY()-this.vSliderWi.GetBoundingBox().getTop())+(this.vScrollBarWi.GetHeight(true)-this.vSliderWi.GetHeight(true))*((this.contentWi.GetBoundingBox().getTop()-this.wi.GetBoundingBox().getTop())/(this.wi.GetHeight(true)-this.contentWi.GetHeight(true)));
+				var dif = (this.wi.GetHeight(true)-this.contentWi.GetHeight(true));
+				dif = dif == 0 ? 1 : dif;
+				var sy = this.vScrollBarWi.GetBoundingBox().getTop()+(this.vSliderWi.GetY()-this.vSliderWi.GetBoundingBox().getTop())+(this.vScrollBarWi.GetHeight(true)-this.vSliderWi.GetHeight(true))*((this.contentWi.GetBoundingBox().getTop()-this.wi.GetBoundingBox().getTop())/(dif));
 				sy = C3.clamp(sy,this.vScrollBarWi.GetBoundingBox().getTop()+(this.vSliderWi.GetY()-this.vSliderWi.GetBoundingBox().getTop()), this.vScrollBarWi.GetBoundingBox().getBottom()-(this.vSliderWi.GetBoundingBox().getBottom() - this.vSliderWi.GetY()));
 				this.vSliderWi.SetY(sy);
 				this.vSliderWi.SetBboxChanged();
 			}
 			if(slider == "h" && this.hSlider && this.hScrollBar){
-				var sx = this.hScrollBarWi.GetBoundingBox().getLeft()+(this.hSliderWi.GetX()-this.hSliderWi.GetBoundingBox().getLeft())+(this.hScrollBarWi.GetWidth(true)-this.hSliderWi.GetWidth(true))*((this.contentWi.GetBoundingBox().getLeft()-this.wi.GetBoundingBox().getLeft())/(this.wi.GetWidth(true)-this.contentWi.GetWidth(true)));
+				var dif = (this.wi.GetWidth(true)-this.contentWi.GetWidth(true));
+				dif = dif == 0 ? 1 : dif;
+				var sx = this.hScrollBarWi.GetBoundingBox().getLeft()+(this.hSliderWi.GetX()-this.hSliderWi.GetBoundingBox().getLeft())+(this.hScrollBarWi.GetWidth(true)-this.hSliderWi.GetWidth(true))*((this.contentWi.GetBoundingBox().getLeft()-this.wi.GetBoundingBox().getLeft())/(dif));
 				sx = C3.clamp(sx,this.hScrollBarWi.GetBoundingBox().getLeft()+(this.hSliderWi.GetX()-this.hSliderWi.GetBoundingBox().getLeft()), this.hScrollBarWi.GetBoundingBox().getRight()-(this.hSliderWi.GetBoundingBox().getRight() - this.hSliderWi.GetX()));
 				this.hSliderWi.SetX(sx);
 				this.hSliderWi.SetBboxChanged();
