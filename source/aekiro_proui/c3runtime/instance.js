@@ -137,7 +137,7 @@ globalThis.AudioSource = class AudioSource {
 			console.error("ProUI: Please add the Audio plugin to the project.");
 			return;
 		}
-		this.act_PlayByName.call(audio,0,this.fileName, 0, this.volume, "sound");		
+		this.act_PlayByName.call(audio, 1, this.fileName, 0, this.volume, 0, "sound");		
 	}
 };
 
