@@ -5,7 +5,7 @@
 	const SDK = self.SDK;
 	const lang = self.lang;
 	const BEHAVIOR_ID = "aekiro_scrollView";
-	const BEHAVIOR_VERSION = "1.821";
+	const BEHAVIOR_VERSION = "1.822";
 	const BEHAVIOR_CATEGORY = "other";
 	const BEHAVIOR_CLASS = SDK.Behaviors.aekiro_scrollView = class aekiro_scrollView extends SDK.IBehaviorBase
 	{

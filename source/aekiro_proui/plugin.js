@@ -6,7 +6,7 @@
 	const C3 = self.C3;
 	const lang = self.lang;
 	const PLUGIN_ID = "aekiro_proui";
-	const PLUGIN_VERSION = "1.821";
+	const PLUGIN_VERSION = "1.822";
 	const PLUGIN_CATEGORY = "other";
 
 	let app = null;
